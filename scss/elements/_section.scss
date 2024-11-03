@@ -1,0 +1,54 @@
+section {
+  width: 100vw;
+  height: 100vh;
+
+  background-color: $light-grey;
+  border: solid $light-grey $outside-margin;
+  padding: $inner-top-padding $inner-side-padding;
+
+  position: relative;
+
+  z-index: 2;
+}
+
+//section:not(.hero) h1 {
+//margin-bottom: 50px;
+//}
+
+section .container {
+  display: flex;
+  align-items: center;
+
+  height: 100%;
+}
+
+section div.down-arrow {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  right: 50%;
+
+  margin-bottom: $inner-top-padding;
+
+  cursor: pointer;
+}
+
+
+
+@media screen and (max-width: $tablet-width) {
+
+  section {
+    height: auto;
+
+    border: 1rem;
+
+    padding-top: 4rem;
+
+    overflow: visible;
+  }
+
+  section.hero, section.contact {
+    padding-bottom: 20vh;
+  }
+
+}

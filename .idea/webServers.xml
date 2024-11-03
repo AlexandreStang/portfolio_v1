@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="fa978f2d-fc66-46f2-90be-43c2a7bb1594" name="d">
+        <fileTransfer host="" port="" rootFolder="" accessType="FTPS">
+          <advancedOptions>
+            <advancedOptions controlEncoding="UTF-8" passiveMode="true" showHiddenFiles="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

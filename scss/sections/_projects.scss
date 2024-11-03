@@ -1,0 +1,104 @@
+
+
+.projects .container .projects-img {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.projects .container .projects-img article {
+  border: solid 1px $dark-grey;
+  padding: 1rem;
+
+  max-width: 32%;
+
+  position: relative;
+
+  margin-bottom: 1rem;
+}
+
+//.projects .container .projects-img article:nth-child(-n+3) {
+//  margin-bottom: 1.5rem;
+//}
+
+.projects .container .projects-img article .projects-text p {
+  display: flex;
+  align-items: center;
+
+  margin: 0;
+}
+
+
+
+// HOVER
+
+.projects .container .projects-img article .projects-text {
+  position: absolute;
+
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  opacity: 0;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  transition: $global-transition;
+}
+
+.projects .container .projects-img article .projects-text::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: $light-grey;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+
+  transition: $global-transition;
+}
+
+.projects .container .projects-img article:hover .projects-text {
+  opacity: 1;
+  z-index: 999;
+}
+
+.projects .container .projects-img article:hover .projects-text::before {
+  opacity: 1;
+
+  transition: $global-transition;
+
+  z-index: -1;
+}
+
+
+// MEDIA
+
+@media screen and (max-width: $tablet-width) {
+
+  .projects .container .projects-img article {
+    max-width: 49%;
+  }
+
+}
+
+@media screen and (max-width: $mobile-width) {
+
+  .projects .container .projects-img {
+    justify-content: center;
+  }
+
+  .projects .container .projects-img article {
+    max-width: 100%;
+  }
+
+}

@@ -1,0 +1,36 @@
+
+
+// GENERIC
+@import "generic/_reset";
+
+// TOOLS
+@import "tools/_fonctions";
+
+// SETTINGS
+@import "settings/_global";
+@import "settings/_dimensions";
+@import "settings/_settings";
+
+
+// ELEMENTS
+@import "elements/_headings";
+@import "elements/_images";
+@import "elements/_links";
+@import "elements/_body";
+@import "elements/_wrapper";
+@import "elements/_navigation";
+@import "elements/_section";
+
+// SECTIONS
+@import "sections/_hero";
+@import "sections/_profil";
+@import "sections/_projects";
+@import "sections/_contact";
+
+// UTILITIES
+@import "utilities/print";
+@import "utilities/media";
+@import "utilities/_template";
+
+
+

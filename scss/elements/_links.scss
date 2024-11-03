@@ -1,0 +1,37 @@
+a {
+  color: $black;
+  text-decoration: none;
+}
+
+a.button {
+  border: solid 1px $black;
+  padding: 20px 35px;
+
+  font-weight: $fw-light;
+  font-family: $ff-subtitle;
+  letter-spacing: letterTracking(200);
+
+  transition: $global-transition;
+}
+
+a.button:hover {
+  background: $black;
+  color: $white;
+
+  transition: $global-transition;
+}
+
+nav a::after, .contact ul a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 1px;
+  background: $black;
+  transition: width .3s;
+
+  margin-top: 5px;
+}
+
+nav a:hover::after, .contact ul a:hover::after {
+  width: 100%;
+}

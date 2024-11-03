@@ -1,0 +1,157 @@
+nav {
+  font-weight: $fw-light;
+  font-family: $ff-subtitle;
+  line-height: leading(36, 48);
+  letter-spacing: letterTracking(200);
+
+  text-transform: lowercase;
+
+  //
+  position: fixed;
+}
+
+nav a {
+  display: inline-block;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li:nth-child(1) {
+  font-size: rem(24);
+  font-weight: $fw-bold;
+  font-family: $ff-text;
+  letter-spacing: letterTracking(0);
+}
+
+nav ul li:not(:nth-child(1)) {
+  margin-top: 30px;
+}
+
+.nav .nav-menu {
+  position: fixed;
+
+  top: 6rem;
+  left: 6.5rem;
+
+  z-index: 99999999;
+}
+
+.nav .nav-menu ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav .nav-languages {
+  position: fixed;
+
+  top: 6rem;
+  right: 6.5rem;
+
+  z-index: 9999;
+}
+
+.nav .down-arrow {
+  position: fixed;
+  right: 50%;
+  bottom: 6rem;
+
+  z-index: 9999;
+}
+
+
+// MENU HAMBURGER
+
+.nav .nav-menu .toggle-menu {
+  display: none;
+}
+
+.nav .nav-menu .show-menu {
+  cursor: pointer;
+
+  display: none;
+
+  z-index: 9999999999999999999;
+}
+
+
+.nav-mobile {
+  background-color: $white;
+
+  position: fixed;
+
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  z-index: 99999999;
+
+  display: none;
+  opacity: 0;
+}
+
+.nav-mobile .nav-menu ul.ul-mobile {
+  display: block;
+
+  margin-top: 4rem;
+}
+
+
+#mobile-1, #mobile-2, #mobile-3, #mobile-4 {
+  opacity: 0;
+}
+
+
+// MÉDIA
+
+@media screen and (max-width: $tablet-width) {
+
+  .nav .nav-menu .show-menu {
+    cursor: pointer;
+
+    display: block;
+  }
+
+  .nav .nav-menu ul {
+    display: none;
+  }
+
+  .nav .nav-menu {
+    top: 2rem;
+    left: 2rem;
+  }
+
+  .nav .nav-languages {
+    top: 2rem;
+    right: 2rem;
+  }
+
+  .nav #down-arrow-container {
+    transform: none;
+
+    transition: $global-transition;
+  }
+
+  .nav #down-arrow {
+    display: none;
+
+    transition: $global-transition;
+  }
+
+}
+
+@media screen and (max-width: $mobile-width) {
+  .nav .nav-menu {
+    top: 0.75rem;
+    left: 0.75rem;
+  }
+
+  .nav .nav-languages {
+    top: 0.75rem;
+    right: 0.75rem;
+  }
+}

@@ -1,0 +1,30 @@
+.hero .container ul {
+  font-size: rem(36);
+  font-weight: $fw-light;
+  font-family: $ff-subtitle;
+  line-height: leading(36, 48);
+  letter-spacing: letterTracking(200);
+  text-transform: lowercase;
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: $tablet-width) {
+
+  .hero .container ul {
+    font-size: rem(24);
+  }
+
+  .hero {
+    padding-top: 25vh;
+  }
+
+}
+
+@media screen and (max-width: $mobile-width) {
+
+
+
+}
