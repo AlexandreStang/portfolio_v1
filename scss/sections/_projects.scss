@@ -1,22 +1,22 @@
 @use "../settings/settings";
 
-
+.projects img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
 
 .projects .container .projects-img {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
 }
 
 .projects .container .projects-img article {
   border: solid 1px settings.$dark-grey;
   padding: 1rem;
 
-  max-width: 32%;
-
   position: relative;
-
-  margin-bottom: 1rem;
 }
 
 //.projects .container .projects-img article:nth-child(-n+3) {
@@ -87,8 +87,8 @@
 
 @media screen and (max-width: settings.$tablet-width) {
 
-  .projects .container .projects-img article {
-    max-width: 49%;
+  .projects .container .projects-img {
+    grid-template-columns: repeat(2, 1fr);
   }
 
 }
@@ -96,11 +96,9 @@
 @media screen and (max-width: settings.$mobile-width) {
 
   .projects .container .projects-img {
-    justify-content: center;
-  }
-
-  .projects .container .projects-img article {
-    max-width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    width: 80%;
+    margin: auto;
   }
 
 }
