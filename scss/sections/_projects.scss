@@ -97,7 +97,7 @@
 
   .projects .container .projects-img {
     grid-template-columns: repeat(1, 1fr);
-    width: 80%;
+    max-width: 360px;
     margin: auto;
   }
 

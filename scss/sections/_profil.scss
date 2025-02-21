@@ -55,12 +55,12 @@
   }
 
   .profil .container .profil-img {
-    width: 80%;
     margin: auto;
   }
 
   .profil .container .skills-img {
     grid-template-columns: repeat(3, 1fr);
+    max-width: 360px;
   }
 
 }

@@ -890,11 +890,11 @@ section div.down-arrow {
     display: block;
   }
   .profil .container .profil-img {
-    width: 80%;
     margin: auto;
   }
   .profil .container .skills-img {
     grid-template-columns: repeat(3, 1fr);
+    max-width: 360px;
   }
 }
 .projects img {
@@ -969,7 +969,7 @@ section div.down-arrow {
 @media screen and (max-width: 660px) {
   .projects .container .projects-img {
     grid-template-columns: repeat(1, 1fr);
-    width: 80%;
+    max-width: 360px;
     margin: auto;
   }
 }
