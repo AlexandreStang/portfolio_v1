@@ -1,36 +1,36 @@
 
 
 // GENERIC
-@import "generic/_reset";
+@use "generic/_reset";
 
 // TOOLS
-@import "tools/_fonctions";
+@use "tools/_fonctions";
 
 // SETTINGS
-@import "settings/_global";
-@import "settings/_dimensions";
-@import "settings/_settings";
+@use "settings/_global";
+@use "settings/_dimensions";
+@use "settings/_settings";
 
 
 // ELEMENTS
-@import "elements/_headings";
-@import "elements/_images";
-@import "elements/_links";
-@import "elements/_body";
-@import "elements/_wrapper";
-@import "elements/_navigation";
-@import "elements/_section";
+@use "elements/_headings";
+@use "elements/_images";
+@use "elements/_links";
+@use "elements/_body";
+@use "elements/_wrapper";
+@use "elements/_navigation";
+@use "elements/_section";
 
 // SECTIONS
-@import "sections/_hero";
-@import "sections/_profil";
-@import "sections/_projects";
-@import "sections/_contact";
+@use "sections/_hero";
+@use "sections/_profil";
+@use "sections/_projects";
+@use "sections/_contact";
 
 // UTILITIES
-@import "utilities/print";
-@import "utilities/media";
-@import "utilities/_template";
+@use "utilities/print";
+@use "utilities/media";
+@use "utilities/_template";
 
 
 

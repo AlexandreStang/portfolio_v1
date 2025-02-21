@@ -1,12 +1,15 @@
+@use "../settings/settings";
+@use "../tools/fonctions";
+
 h1 {
-  font-size: rem(72);
-  font-weight: $fw-bold;
-  font-family: $ff-text;
+  font-size: fonctions.rem(72);
+  font-weight: settings.$fw-bold;
+  font-family: settings.$ff-text;
   text-transform: lowercase;
 
   position: relative;
 
-  line-height: leading(48, 48);
+  line-height: fonctions.leading(48, 48);
 
   margin: 0;
 }
@@ -20,7 +23,7 @@ h1 {
 
   width: 107.5%;
   height: 20%;
-  background-color: $yellow;
+  background-color: settings.$yellow;
 
   bottom: 1.25rem;
   left: -1.25rem;
@@ -29,36 +32,36 @@ h1 {
 }
 
 h2 {
-  font-size: rem(60);
-  font-weight: $fw-bold;
-  font-family: $ff-text;
+  font-size: fonctions.rem(60);
+  font-weight: settings.$fw-bold;
+  font-family: settings.$ff-text;
   text-transform: lowercase;
 
   position: relative;
 
-  line-height: leading(48, 48);
+  line-height: fonctions.leading(48, 48);
 
   margin: 0 0 2rem 0;
 }
 
 h3 {
-  font-size: rem(24);
-  font-weight: $fw-bold;
-  font-family: $ff-text;
+  font-size: fonctions.rem(24);
+  font-weight: settings.$fw-bold;
+  font-family: settings.$ff-text;
 
   position: relative;
 
-  line-height: leading(48, 48);
+  line-height: fonctions.leading(48, 48);
 
   margin: 0 0 0.5rem 0;
 }
 
 
 
-@media screen and (max-width: $tablet-width) {
+@media screen and (max-width: settings.$tablet-width) {
 
   h1 {
-    font-size: rem(60);
+    font-size: fonctions.rem(60);
   }
 
   .h1-hero .h1-bg {
@@ -68,7 +71,7 @@ h3 {
 
 }
 
-@media screen and (max-width: $mobile-width) {
+@media screen and (max-width: settings.$mobile-width) {
 
 .h1-bg {
   display: none;

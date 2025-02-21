@@ -1,7 +1,9 @@
+@use "../settings/settings";
+
 .wrapper {
   margin: auto;
   padding: 0;
-  max-width: $max-width;
+  max-width: settings.$max-width;
   width: 75%;
 }
 
@@ -50,7 +52,7 @@
 }
 
 
-@media screen and (max-width: $mobile-width) {
+@media screen and (max-width: settings.$mobile-width) {
   .wrapper {
     margin: 0;
     width: 100%;

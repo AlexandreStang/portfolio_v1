@@ -1,10 +1,12 @@
+@use "../settings/settings";
+
 section {
   width: 100vw;
   height: 100vh;
 
-  background-color: $light-grey;
-  border: solid $light-grey $outside-margin;
-  padding: $inner-top-padding $inner-side-padding;
+  background-color: settings.$light-grey;
+  border: solid settings.$light-grey settings.$outside-margin;
+  padding: settings.$inner-top-padding settings.$inner-side-padding;
 
   position: relative;
 
@@ -28,14 +30,14 @@ section div.down-arrow {
   left: 50%;
   right: 50%;
 
-  margin-bottom: $inner-top-padding;
+  margin-bottom: settings.$inner-top-padding;
 
   cursor: pointer;
 }
 
 
 
-@media screen and (max-width: $tablet-width) {
+@media screen and (max-width: settings.$tablet-width) {
 
   section {
     height: auto;

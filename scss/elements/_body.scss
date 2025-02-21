@@ -1,16 +1,19 @@
+@use "../settings/settings";
+@use "../tools/fonctions";
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  background-color: $white;
+  background-color: settings.$white;
 
-  color: $black;
-  font-size: rem(16);
-  font-weight: $fw-regular;
-  font-family: $ff-text;
+  color: settings.$black;
+  font-size: fonctions.rem(16);
+  font-weight: settings.$fw-regular;
+  font-family: settings.$ff-text;
 
-  line-height: leading(16, 24);
+  line-height: fonctions.leading(16, 24);
 
   width: 100%;
   height: 100%;
@@ -28,7 +31,7 @@ p {
   height: 100vh;
   width: 100vw;
 
-  border: solid $outside-margin $white;
+  border: solid settings.$outside-margin settings.$white;
 
   position: fixed;
 
@@ -46,7 +49,7 @@ p {
 
 
 
-@media screen and (max-width: $tablet-width) {
+@media screen and (max-width: settings.$tablet-width) {
 
   body {
    overflow: auto;

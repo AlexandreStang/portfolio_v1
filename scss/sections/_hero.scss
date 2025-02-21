@@ -1,9 +1,12 @@
+@use "../settings/settings";
+@use "../tools/fonctions";
+
 .hero .container ul {
-  font-size: rem(36);
-  font-weight: $fw-light;
-  font-family: $ff-subtitle;
-  line-height: leading(36, 48);
-  letter-spacing: letterTracking(200);
+  font-size: fonctions.rem(36);
+  font-weight: settings.$fw-light;
+  font-family: settings.$ff-subtitle;
+  line-height: fonctions.leading(36, 48);
+  letter-spacing: fonctions.letterTracking(200);
   text-transform: lowercase;
 
   list-style: none;
@@ -11,10 +14,10 @@
   padding: 0;
 }
 
-@media screen and (max-width: $tablet-width) {
+@media screen and (max-width: settings.$tablet-width) {
 
   .hero .container ul {
-    font-size: rem(24);
+    font-size: fonctions.rem(24);
   }
 
   .hero {
@@ -23,7 +26,7 @@
 
 }
 
-@media screen and (max-width: $mobile-width) {
+@media screen and (max-width: settings.$mobile-width) {
 
 
 

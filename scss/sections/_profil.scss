@@ -1,3 +1,5 @@
+@use "../settings/settings";
+
 
 .profil-text {
   width: 48%;
@@ -29,7 +31,7 @@
 }
 
 .profil .container .profil-img div.row div {
-  border: 1px solid $dark-grey;
+  border: 1px solid settings.$dark-grey;
   padding: 5%;
 
   width: 30%;
@@ -45,7 +47,7 @@
   margin-bottom: 3rem;
 }
 
-@media screen and (max-width: $tablet-width) {
+@media screen and (max-width: settings.$tablet-width) {
 
   .profil-text {
     width: 100%;

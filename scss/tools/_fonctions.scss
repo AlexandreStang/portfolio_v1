@@ -1,6 +1,8 @@
 
+@use "sass:math";
+
 @function rem($fs){
-  @return ($fs / 16) + rem;
+  @return math.div($fs, 16) + rem;
 }
 
 @mixin font($family, $size: 'inherit') {
@@ -9,11 +11,11 @@
 }
 
 @function leading($fs, $leading){
-  @return ($leading / $fs);
+  @return math.div($leading, $fs);
 }
 
 @function letterTracking($lt){
-  @return ($lt / 1000) + em;
+  @return ($lt * 0.001) + em;
 }
 
 //Done

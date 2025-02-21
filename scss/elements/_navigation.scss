@@ -1,8 +1,11 @@
+@use "../settings/settings";
+@use "../tools/fonctions";
+
 nav {
-  font-weight: $fw-light;
-  font-family: $ff-subtitle;
-  line-height: leading(36, 48);
-  letter-spacing: letterTracking(200);
+  font-weight: settings.$fw-light;
+  font-family: settings.$ff-subtitle;
+  line-height: fonctions.leading(36, 48);
+  letter-spacing: fonctions.letterTracking(200);
 
   text-transform: lowercase;
 
@@ -21,10 +24,10 @@ nav ul {
 }
 
 nav ul li:nth-child(1) {
-  font-size: rem(24);
-  font-weight: $fw-bold;
-  font-family: $ff-text;
-  letter-spacing: letterTracking(0);
+  font-size: fonctions.rem(24);
+  font-weight: settings.$fw-bold;
+  font-family: settings.$ff-text;
+  letter-spacing: fonctions.letterTracking(0);
 }
 
 nav ul li:not(:nth-child(1)) {
@@ -79,7 +82,7 @@ nav ul li:not(:nth-child(1)) {
 
 
 .nav-mobile {
-  background-color: $white;
+  background-color: settings.$white;
 
   position: fixed;
 
@@ -108,7 +111,7 @@ nav ul li:not(:nth-child(1)) {
 
 // MÉDIA
 
-@media screen and (max-width: $tablet-width) {
+@media screen and (max-width: settings.$tablet-width) {
 
   .nav .nav-menu .show-menu {
     cursor: pointer;
@@ -133,18 +136,18 @@ nav ul li:not(:nth-child(1)) {
   .nav #down-arrow-container {
     transform: none;
 
-    transition: $global-transition;
+    transition: settings.$global-transition;
   }
 
   .nav #down-arrow {
     display: none;
 
-    transition: $global-transition;
+    transition: settings.$global-transition;
   }
 
 }
 
-@media screen and (max-width: $mobile-width) {
+@media screen and (max-width: settings.$mobile-width) {
   .nav .nav-menu {
     top: 0.75rem;
     left: 0.75rem;
