@@ -935,6 +935,7 @@ section div.down-arrow {
   align-items: center;
   justify-content: center;
   transition: all ease 0.2s;
+  text-align: center;
 }
 
 .projects .container .projects-img article .projects-text::before {
