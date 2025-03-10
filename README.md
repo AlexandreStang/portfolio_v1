@@ -6,7 +6,7 @@
 
 ## 🚀 Live Demo
 
-This website is currently hosted on Github and is available in both French and English. [Click here to visit the site!](https://alexandrestang.github.io/2018_portfolio/)
+This website is currently hosted on Github and is available in both French and English. [Click here to visit the site!](https://alexandrestang.github.io/portfolio_v1/)
 
 ## ⚡ Technologies Used
 
